@@ -37,7 +37,7 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
-            "internalConsoleOptions": "openOnSessionStart"
+            "internalConsoleOptions": "openOnSessionStart",
             "MIMode": "gdb",
             "setupCommands": [
                 {
