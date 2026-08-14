@@ -48,7 +48,7 @@ scanf("%d", &pontosturisticos1);
 
 // Calcular densidade e per capita após entrada dados usuário
 densidade1 = (float) populacao1 / area1;
-percapita1 =  pib1 * 1000000 / (float) populacao1; //como o valor está em bilhões mas sem os zeros, solução multiplicar antes de dividir
+percapita1 =  pib1 * 1000000 / (float) populacao1;
 
 //Cadastro carta 2
 
@@ -71,7 +71,7 @@ scanf("%d", &pontosturisticos2);
 
 // Calcular densidade e per capita após entrada dados usuário
 densidade2 = (float) populacao2 / area2;
-percapita2 =  pib2 * 1000000 / (float) populacao2; //como o valor está em bilhões mas sem os zeros, solução multiplicar antes de dividir
+percapita2 =  pib2 * 1000000 / (float) populacao2;
 
 // --- EXIBIÇÃO DA CARTA 1 ---
     printf("\n====================\n");
@@ -84,7 +84,7 @@ percapita2 =  pib2 * 1000000 / (float) populacao2; //como o valor está em bilh�
     printf("PIB: %.f bilhoes de reais\n", pib1);
     printf("Pontos Turisticos: %d\n", pontosturisticos1);
     printf("Densidade Populacional: %.2f habitantes por km²\n", densidade1);
-    printf("PIB per capita: %.3f reais\n", percapita1); // três casas depois do ponto para dar o valor em mil reais
+    printf("PIB per capita: %.3f reais\n", percapita1);
 
 
 
@@ -99,10 +99,10 @@ percapita2 =  pib2 * 1000000 / (float) populacao2; //como o valor está em bilh�
     printf("PIB: %.f bilhoes de reais\n", pib2);
     printf("Pontos Turisticos: %d\n", pontosturisticos2);
     printf("Densidade Populacional: %.2f habitantes por km²\n", densidade2);
-    printf("PIB per capita: %.3f reais\n", percapita2); // três casas depois do ponto para dar o valor em mil reais
+    printf("PIB per capita: %.3f reais\n", percapita2);
     printf("====================\n");
 
     return 0;
-    
+
 
 }
