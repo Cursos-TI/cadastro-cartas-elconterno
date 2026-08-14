@@ -54,7 +54,7 @@ percapita1 =  pib1 * 1000000 / (float) populacao1;
 
 printf("------Cadastro da Carta 2------\n");
 printf("Estado (A-H): "); 
-scanf("%c", &estado2);
+scanf(" %c", &estado2);
 printf("Código da carta (ex: B2): ");
 scanf("%s", codigo2);
 printf("Cidade: ");
