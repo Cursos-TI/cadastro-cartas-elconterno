@@ -11,6 +11,8 @@ int populacao1;
 float area1;
 float pib1;
 int pontosturisticos1;
+float densidade1;
+float percapita1;
 
 //Variáveis carta 2
 char estado2;
@@ -20,6 +22,9 @@ int populacao2;
 float area2;
 float pib2;
 int pontosturisticos2;
+float densidade2;
+float percapita2;
+
 
 
 //Cadastro carta 1
@@ -40,6 +45,11 @@ scanf("%f", &pib1);
 printf("Pontos turísticos: ");
 scanf("%d", &pontosturisticos1);
 
+
+// Calcular densidade e per capita após entrada dados usuário
+densidade1 = (float) populacao1 / area1;
+percapita1 =  pib1 * 1000000 / (float) populacao1; //como o valor está em bilhões mas sem os zeros, solução multiplicar antes de dividir
+
 //Cadastro carta 2
 
 printf("------Cadastro da Carta 2------\n");
@@ -58,6 +68,11 @@ scanf("%f", &pib2);
 printf("Pontos turísticos: ");
 scanf("%d", &pontosturisticos2);
 
+
+// Calcular densidade e per capita após entrada dados usuário
+densidade2 = (float) populacao2 / area2;
+percapita2 =  pib2 * 1000000 / (float) populacao2; //como o valor está em bilhões mas sem os zeros, solução multiplicar antes de dividir
+
 // --- EXIBIÇÃO DA CARTA 1 ---
     printf("\n====================\n");
     printf("Carta 1:\n");
@@ -68,6 +83,10 @@ scanf("%d", &pontosturisticos2);
     printf("Area: %.f km2\n", area1);
     printf("PIB: %.f bilhoes de reais\n", pib1);
     printf("Pontos Turisticos: %d\n", pontosturisticos1);
+    printf("Densidade Populacional: %.2f habitantes por km²\n", densidade1);
+    printf("PIB per capita: %.3f reais\n", percapita1); // três casas depois do ponto para dar o valor em mil reais
+
+
 
     // --- EXIBIÇÃO DA CARTA 2 ---
     printf("\n====================\n");
@@ -79,7 +98,11 @@ scanf("%d", &pontosturisticos2);
     printf("Area: %.f km2\n", area2);
     printf("PIB: %.f bilhoes de reais\n", pib2);
     printf("Pontos Turisticos: %d\n", pontosturisticos2);
+    printf("Densidade Populacional: %.2f habitantes por km²\n", densidade2);
+    printf("PIB per capita: %.3f reais\n", percapita2); // três casas depois do ponto para dar o valor em mil reais
     printf("====================\n");
-return 0;
+
+    return 0;
+    
 
 }
