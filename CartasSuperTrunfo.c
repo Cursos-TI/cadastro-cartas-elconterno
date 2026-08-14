@@ -40,13 +40,10 @@ scanf("%f", &pib1);
 printf("Pontos turísticos: ");
 scanf("%d", &pontosturisticos1);
 
-
-
-
 //Cadastro carta 2
 
 printf("------Cadastro da Carta 2------\n");
-printf("Estado (A-H): "); //Algum erro que não detectei nessa linha
+printf("Estado (A-H): "); 
 scanf("%c", &estado2);
 printf("Código da carta (ex: B2): ");
 scanf("%s", codigo2);
